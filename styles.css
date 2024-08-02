@@ -10,6 +10,8 @@ body {
 
 .container {
     width: 90%;
+    display: flex;
+    gap: 50PX;
     max-width: 500px;
     background: white;
     padding: 20px;
@@ -19,6 +21,22 @@ body {
 
 .generate-section, .input-match-section {
     margin-bottom: 20px;
+}
+
+.generate-section{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.generatedPassword{
+    border: #007bff;
+    border-radius: 20px;
+}
+
+.submitBtn{
+    margin-top: 10px;
 }
 
 .password-display {
@@ -31,6 +49,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -40,6 +59,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     .keypad {
         grid-template-columns: repeat(2, 1fr);
     }
