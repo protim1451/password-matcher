@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleSubmit() {
         if (inputPassword === generatedPassword) {
-            message.textContent = 'Success! 🎉';
+            message.textContent = 'Password Match Success! 🎉';
             message.style.color = 'green';
         } else {
-            message.textContent = 'Error! ❌';
+            message.textContent = 'Password Match failed ❌';
             message.style.color = 'red';
         }
     }
